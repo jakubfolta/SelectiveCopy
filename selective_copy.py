@@ -15,6 +15,6 @@ for file in os.listdir(path_to_check):
 # Print result and what will be done.
         print('Copy {} to {}'.format(file, copies_path))
 # Copy wanted files to other destination.
-        #shutil.copy(file, copies_path)
+    dgfs    #shutil.copy(file, copies_path)
 
 # TODO: Change project status on github.
