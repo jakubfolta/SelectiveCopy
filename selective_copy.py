@@ -7,14 +7,15 @@ import os
 import shutil
 
 # Create variables with directory to check and directory to copies folder.
-path_to_check = 'C:\\Users\ogi-8\Desktop\PythonProjects'
-copies_path = 'C:\\Users\ogi-8\Desktop\PythonProjects\SelectiveCopy\TXT_files'
+path_to_check = r'C:\Users\ogi-8\Desktop\PythonProjects'
+copies_path = r'C:\Users\ogi-8\Desktop\PythonProjects\SelectiveCopy\TXT_files'
 
 # Use for loop and os.listdir to find files with wanted extension.
-for file in os.listdir(path_to_check):
-    
-    :
-        file_path == os.path.abspath('..\\' + file)
+# for file in os.listdir(path_to_check):
+
+for x in os.listdir(path):
+    if x.startswith('.zip'):
+        file_path = os.path.abspath('..\\' + x)
         print(file_path)
 
 # Get abs path to matched file.
