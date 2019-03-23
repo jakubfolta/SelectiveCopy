@@ -11,16 +11,11 @@ path_to_check = r'C:\Users\ogi-8\Desktop\PythonProjects'
 copies_path = r'C:\Users\ogi-8\Desktop\PythonProjects\SelectiveCopy\TXT_files'
 
 # Use for loop and os.listdir to find files with wanted extension.
-# for file in os.listdir(path_to_check):
-
-for x in os.listdir(path):
-    if x.startswith('.zip'):
+for x in os.listdir(path_to_check):
+    if x.startswith('.txt'):
+# Get abs path to matched file.
         file_path = os.path.abspath('..\\' + x)
         print(file_path)
-
-# Get abs path to matched file.
-        print(file)
-        print(os.path.abspath(file))
 
 # Print result and what will be done.
         print('Copy {} to {}'.format(file, copies_path))
