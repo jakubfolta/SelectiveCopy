@@ -23,4 +23,5 @@ for file in os.listdir(path_to_check):
 # Copy wanted files to other destination.
         shutil.copy(file_path, copies_path)
 
-# TODO: Change project status on github.
+# Change project status on github.
+print('Done.')
