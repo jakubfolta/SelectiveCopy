@@ -6,7 +6,7 @@ Copy these files from whatever location they are in to a new folder.
 * Python - version 3.7
 
 ## Status
-Project is unfinished.
+Project is finished.
 
 ## Sources
 This project was inspired by "Automate the boring stuff with Python" by Al Sweigart.
