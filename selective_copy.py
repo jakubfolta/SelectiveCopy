@@ -11,16 +11,16 @@ path_to_check = r'C:\Users\ogi-8\Desktop\PythonProjects'
 copies_path = r'C:\Users\ogi-8\Desktop\PythonProjects\SelectiveCopy\TXT_files'
 
 # Use for loop and os.listdir to find files with wanted extension.
-for x in os.listdir(path_to_check):
-    if x.startswith('.txt'):
+for file in os.listdir(path_to_check):
+    if file.endswith('.txt'):
+
 # Get abs path to matched file.
-        file_path = os.path.abspath('..\\' + x)
-        print(file_path)
+        file_path = os.path.abspath('..\\' + file)
 
 # Print result and what will be done.
         print('Copy {} to {}'.format(file, copies_path))
 
 # Copy wanted files to other destination.
-        shutil.copy(file, copies_path)
+        shutil.copy(file_path, copies_path)
 
 # TODO: Change project status on github.
